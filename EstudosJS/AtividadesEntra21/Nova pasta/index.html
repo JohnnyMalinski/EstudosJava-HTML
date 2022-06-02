@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <form action=""> 
+
+            <label for="idTexto">Texto</label>
+            <input type="text" id="idTexto" name="nmTexto"><br><br>
+
+            <label for="idNumero">Numero</label><br>
+            <input type="number" id="idNumero" name="nmNumero" min="1" max="20">
+
+
+            <input type="button" value="Capturar" onclick="capturaTela()"> 
+            
+        </form>
+
+        <script>
+            
+            var texto
+            var numero
+            
+            function capturaTela() {
+
+                texto = document.getElementById("idTexto").value
+                console.log("Texto: " + texto);
+                
+                numero = document.getElementById("idNumero").value
+                console.log("Numero: " + numero);
+
+            }
+
+            
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idNum">Numero</label>
+        <input type="number" name="Num" id="idNum">
+        <br><br>
+        <output id="idOut"></output>
+        <input type="button" value="enviar" onclick="enviarNumero()">
+
+
+    </form>
+
+    <script>
+
+
+        function enviarNumero() {
+            const numero = Number(document.getElementById("idNum").value)
+            let out = document.getElementById("idOut")
+
+        if (numero > 30 && numero < 90) {
+            out.value = "O numero (" + numero + ") está contido no interalo"
+            
+        } else{
+            out.value = "O numero (" + numero + ") nao está contido no interalo"
+        }
+        }
+    </script>
+
+</body>
+</html>
